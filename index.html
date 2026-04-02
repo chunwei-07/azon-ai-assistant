@@ -59,7 +59,7 @@
         
         <header class="bg-black p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between text-white shadow-md z-10 shrink-0 space-y-3 sm:space-y-0">
             <div class="flex items-center space-x-3">
-                <img src="https://www.azon.my/templates/joomspirit_107/images/logo.png" alt="AZON Logo" class="h-9 sm:h-10 w-auto" onerror="this.onerror=null;this.src='https://placehold.co/100x40/000000/FFFFFF?text=AZON';">
+                <img src="azon-logo.svg" alt="AZON Logo" class="h-9 sm:h-10 w-auto" onerror="this.onerror=null;this.src='https://placehold.co/100x40/000000/FFFFFF?text=AZON';">
                 <div>
                     <h1 class="text-base sm:text-lg font-bold leading-tight">AZON AI Assistant v0.1.0</h1>
                     <p class="text-xs opacity-80">Your guide to AZON Allied Health & Educare</p>
@@ -183,10 +183,10 @@
         let originalTtsIcon = null;
 
         const BASE_SYSTEM_INSTRUCTION = `You are the AZON AI Assistant, a professional and helpful guide for AZON Allied Health & Educare Development Sdn. Bhd., a psychological and therapeutic centre based in Puchong, Selangor, Malaysia.
-        1. Search First: Always use Google Search to find the latest information, but ONLY from the official AZON website: azon.my. Do not use any other source.
-        2. Hyperlinks: Include direct Markdown Links [Title](URL) pointing only to azon.my pages.
+        1. Search First: Always use Google Search to find information. You must ONLY use results from the official AZON website at https://www.azon.my — ignore all other search results entirely, including anything related to Amazon or any other entity named AZON.
+        2. Hyperlinks: Include direct Markdown Links [Title](URL) pointing only to pages under https://www.azon.my
         3. Formatting: Use bullet points, bold text, and tables for clarity.
-        4. Focus: Strictly AZON — their services (psychology, psychotherapy, life education, child development, parenting, elderly care), location, contact details, and programmes. Politely decline to answer anything unrelated to AZON.
+        4. Focus: Strictly AZON Allied Health & Educare Development Sdn. Bhd. — their services (psychology, psychotherapy, life education, child development, parenting, elderly care), location, contact details, and programmes. Politely decline to answer anything unrelated to AZON.
         5. Tone: Professional, warm, and empathetic — befitting a mental health and educare provider.
         6. Language: You must respond in the language specified in your dynamic instructions.`;
 
@@ -413,7 +413,7 @@
                 wrapper.appendChild(div);
             } else {
                 const img = document.createElement('img');
-                img.src = 'https://i.imgur.com/RgCn03w.png';
+                img.src = 'azon-logo.svg';
                 img.className = 'h-7 w-7 sm:h-8 sm:w-8 rounded-full shrink-0 border bg-white p-0.5';
                 wrapper.appendChild(img);
                 
@@ -440,7 +440,7 @@
             const wrapper = document.createElement('div');
             wrapper.id = 'typing-indicator';
             wrapper.className = 'flex items-end space-x-3 message-bubble';
-            wrapper.innerHTML = `<img src="https://i.imgur.com/RgCn03w.png" class="h-7 w-7 sm:h-8 sm:w-8 rounded-full border bg-white p-0.5">
+            wrapper.innerHTML = `<img src="azon-logo.svg" class="h-7 w-7 sm:h-8 sm:w-8 rounded-full border bg-white p-0.5">
                 <div class="flex items-center space-x-1 p-4 bg-gray-200 rounded-2xl rounded-bl-none">
                     <div class="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style="animation-delay:-0.3s"></div>
                     <div class="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style="animation-delay:-0.15s"></div>
